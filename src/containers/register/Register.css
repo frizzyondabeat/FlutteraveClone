@@ -1,0 +1,20 @@
+#check-box:checked ~ .checkmark {
+    @apply text-opacity-100;
+    animation: check-animation 0.5s 1;
+}
+
+@keyframes check-animation {
+/*    cool effect animation for checkmark*/
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
